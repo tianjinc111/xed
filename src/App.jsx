@@ -77,12 +77,15 @@ export default function LoveConfessionApp() {
     <div className="text-sm font-semibold text-gray-700 mb-2">
       这是我写给你的一首歌 🎶 ，当然，用了一些工具～
     </div>
+    
+    
     <audio controls className="w-48">
-      <source src="/unsent-confessions.mp3" type="audio/mpeg" />
-      Your browser does not support the audio tag.
-    </audio>
+  <source src={`${import.meta.env.BASE_URL}unsent-confessions.mp3`} type="audio/mpeg" />
+  Your browser does not support the audio tag.
+</audio>
+
   
-    <div className="mt-2">
+    {/* <div className="mt-2">
       <a
         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         target="_blank"
@@ -91,7 +94,7 @@ export default function LoveConfessionApp() {
       >
         去听完整歌曲
       </a>
-    </div>
+    </div> */}
   </div>
 
       <div className="relative z-10 w-full max-w-2xl">
@@ -99,11 +102,8 @@ export default function LoveConfessionApp() {
 
 
         <div className="flex flex-row items-center justify-center gap-3 mb-4">
-  <img 
-    src="/pic1.jpg"   
-    alt="decoration"
-    className="w-10 h-10 md:w-12 md:h-12"
-  />
+        <img src={`${import.meta.env.BASE_URL}pic1.jpg`} alt="decoration" />
+
   <h1 className="text-3xl md:text-4xl font-extrabold">
     一个傻瓜程序员想说的话
   </h1>
@@ -209,11 +209,8 @@ export default function LoveConfessionApp() {
           {showFinal && (
   <div className="flex items-center justify-center mt-6 space-x-4">
 
-    <img 
-      src="/love.jpg"  
-      alt="love"
-      className="w-20 h-20 object-contain"
-    />
+<img src={`${import.meta.env.BASE_URL}love.png`} alt="love" />
+
 
    
     <div className="big-text">
